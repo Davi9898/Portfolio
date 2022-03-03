@@ -18,12 +18,27 @@ body {
     margin: 3rem;
 }
 
+.projectentitel {
+    display: flex;
+    justify-content: center;
+    margin: 0 2rem 0 2rem;
+}
 
+.projectentitel h2 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-family: 'Josefin Sans', sans-serif;
+}
 
 h1 {
     display: flex;
     justify-content: center;
     margin-top: 3rem;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+h2{ 
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 p {
@@ -31,6 +46,7 @@ p {
     justify-content: center;
     margin-top: 3rem;
     font-size: 1rem;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 .container {
@@ -130,6 +146,7 @@ p {
 
 h1 {
     color: white;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 @media only screen and (max-width: 1024px) {
