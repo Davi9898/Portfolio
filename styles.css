@@ -1,0 +1,165 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  
+  background-color: rgb(178, 187, 165);
+  height: 100rem;
+}
+
+.container1 {
+    display: flex;
+    margin: 3rem;
+}
+
+
+
+h1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    font-size: 1rem;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1400px;
+}   
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.portofolio-item {
+    width: 50%;
+    padding: 2rem;
+    position: relative;
+    
+}
+
+.portofolio-img {
+    width: 100%;
+    border-radius: 1rem;
+    filter: brightness(40%);
+}
+
+.portofolio-img2 {
+    width: 100%;
+    border-radius: 1rem;
+    
+}
+
+.portofolio-item:hover {
+    transform: scale(1.1);
+    transition: .5s ease-out;
+    filter: brightness(100%);
+}
+
+.portofolio-item:hover .portofolio-img {
+    filter: brightness(100%)
+}
+
+.portofolio-item p {
+    position: absolute;
+    color: white;
+    opacity: 1;
+    left: 3rem;
+    top: 3rem;
+    transition: .5s ease-out; 
+    
+}
+
+.portofolio-item:hover p {
+    opacity: 0;
+    position: absolute;
+    color: white;
+}
+
+.portofolio-item h2 {
+    position: absolute;
+    color: whitesmoke;
+    opacity: 1;
+    left: 3rem;
+    top: 4rem;
+    transition: .5s ease-out; 
+    
+}
+
+.portofolio-item:hover h2 {
+    opacity: 0;
+    position: absolute;
+    color: white;
+}
+
+
+.container1 {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1400px;
+}   
+
+.row2 {
+    display: flex;
+    justify-content: center;
+}
+
+.item3 {
+    width: 50%;
+    padding: 2rem;
+}
+
+.item4 {
+    width: 50%;
+    padding: 2rem;
+    
+}
+
+h1 {
+    color: white;
+}
+
+@media only screen and (max-width: 1024px) {
+    .row {
+      flex-wrap: wrap;
+      flex-direction: column;
+      display: flex;
+    }
+    .portofolio-item {
+        width: 100%;
+        filter: brightness(20%); 
+    }
+
+    .row2 {
+        flex-wrap: wrap;
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+      }
+
+    .item3 {
+        width:100%;
+    }  
+      
+    .item4 {
+        width: 100%;
+        
+    }
+      
+  }
+
+
+

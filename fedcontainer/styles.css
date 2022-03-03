@@ -1,0 +1,7 @@
+.fedcontainer {
+    width:100%;
+    aspect-ratio: 9/16;
+    max-width:414px;
+    height: 100%;
+    margin:auto;
+}

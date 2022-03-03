@@ -1,0 +1,157 @@
+*, html{
+Padding: 0;
+Margin: 0;
+box-sizing: border-box;
+}
+body{
+    background-image: url(./img/background2.jpg);
+    background-size: cover;
+    font-size: 40px;
+    background-position: center;
+    font-family: 'Bodoni Moda', serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    font-family: 'Yusei Magic', sans-serif;  
+}
+
+.sun_container{
+    position: relative;
+    height: 450px;
+}
+
+.sun_container img{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    z-index: -1; 
+}
+
+.form_container{
+    width: 500px;  
+}
+
+.planeet_container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    width: 100%;
+    padding: 5rem; 
+}
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding-bottom: 100px;
+}
+
+/*Hier boven staan alle containers. Deze dienen ervoor dat elementen op een geselecteerde plek op de pagina komen te staan.*/
+nav{
+    position: fixed;
+    top: 40px;
+    font-size: x-large;
+    z-index: 999;
+    padding: 16px;
+    margin: 16px;
+}
+
+footer{
+    height: 13em;
+    width: 100%;
+    color: white;
+    font-size: small;
+} 
+.planeet{
+    width: 200px;
+    height: 200px;
+    transition: 1s;
+}
+
+.planeet img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+label{
+    display: block;
+}
+
+.email{
+    width: 400px; 
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    color: darkgray;
+    transition: 0.3s;
+}
+/*Zorgt er voor dat er een kleurtje komt wanneer de cursor op een link komt*/
+a:active{
+     color: red;
+}
+  
+ol{
+    margin: 2em;
+    display: block;
+    justify-content: center;        
+}
+
+ul li{
+    padding: 16px;
+    list-style-type: none;
+}
+
+h1{
+    font-size: large;
+    color: black;
+    display: flex;
+    z-index: 1;
+    justify-content: center;
+    font-size: 100px;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Yusei Magic', sans-serif;
+}
+
+h2{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+h6{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+p{
+    color: white;
+    font-size: x-large;
+}
+.purposes{
+    list-style-type: none;
+}
+form{
+    color:white;
+     
+}
+button{
+    width: 75px;
+    background-color: black;
+    color: white;
+    outline: 2px solid white;
+    display: block;  /*Zorgt ervoor dat de button onder de textarea staat. */
+}
+
+textarea{
+    width: 400px;
+    height: 200px;
+}
+
+.bron{
+    color: blue;
+}
