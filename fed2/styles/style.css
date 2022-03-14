@@ -366,6 +366,7 @@ video p {
   display: flex;
   flex-wrap: wrap;
   color: #74c0e9;
+  background-color: white;
 }
 
 .beleef-blokken h2 {

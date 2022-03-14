@@ -3,6 +3,21 @@
   box-sizing:border-box;  
 }
 
+.teruglink {
+  position: absolute;
+  left: 0;
+  top: 0;
+  text-decoration: none;
+  color: rgb(35, 35, 95);
+  background-color: white;
+  padding: .5rem;
+}
+
+.teruglink:hover {
+  color: rgb(147, 147, 247);
+  transition: .3s ease-in-out; 
+}
+
 html, body {
   height:100%;
   width:100%;

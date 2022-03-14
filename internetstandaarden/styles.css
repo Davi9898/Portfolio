@@ -3,6 +3,8 @@ Padding: 0;
 Margin: 0;
 box-sizing: border-box;
 }
+
+
 body{
     background-image: url(./img/background2.jpg);
     background-size: cover;
@@ -154,4 +156,19 @@ textarea{
 
 .bron{
     color: blue;
+}
+
+.teruglink {
+    position: absolute;
+    left: 0;
+    top: 0;
+    text-decoration: none;
+    color: rgb(35, 35, 95);
+    background-color: white;
+    padding: .5rem;
+}
+
+.teruglink:hover {
+    color: rgb(147, 147, 247);
+    transition: .3s ease-in-out; 
 }

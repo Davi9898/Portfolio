@@ -1,7 +1,42 @@
 .fedcontainer {
     width:100%;
     aspect-ratio: 9/16;
-    max-width:414px;
+    min-width:320px;
     height: 100%;
     margin:auto;
+}
+
+iframe {
+    border: 0;
+}
+
+body {
+    margin: 0;
+    background-color: rgb(178, 187, 165);
+}
+
+.page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.wrapper {
+    position: relative;
+}
+
+.teruglink {
+    position: absolute;
+    left: 0;
+    top: 0;
+    text-decoration: none;
+    color: rgb(35, 35, 95);
+    background-color: white;
+    padding: .5rem;
+}
+
+.teruglink:hover {
+    color: rgb(147, 147, 247);
+    transition: .3s ease-in-out; 
 }

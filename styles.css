@@ -107,7 +107,7 @@ p {
 
 .portofolio-item h2 {
     position: absolute;
-    color: whitesmoke;
+    color: white;
     opacity: 1;
     left: 3rem;
     top: 4rem;
@@ -156,8 +156,10 @@ h1 {
       display: flex;
     }
     .portofolio-item {
-        width: 100%;
-        filter: brightness(20%); 
+        width: 100%; 
+    }
+    .portofolio-img {
+        filter: brightness(40%);
     }
 
     .row2 {
