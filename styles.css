@@ -188,5 +188,16 @@ h1 {
       
   }
 
+  @media only screen and (max-width: 420px) {
+      .tekstimg {
+          font-size: .8rem;
+      }
+
+      .tekstheader{
+          font-size: 1.1rem;
+      }
+
+  }
+
 
 
