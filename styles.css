@@ -79,6 +79,13 @@ p {
     
 }
 
+.portofolio-img3 {
+    width: 100%;
+    border-radius: 1rem;
+    height: 100%;
+    object-fit: contain;
+}
+
 .portofolio-item:hover {
     transform: scale(1.1);
     transition: .5s ease-out;
@@ -145,8 +152,9 @@ p {
 }
 
 h1 {
-    color: white;
+    color: rgb(22, 2, 2);
     font-family: 'Josefin Sans', sans-serif;
+    font-size: 2.5rem;
 }
 
 @media only screen and (max-width: 1024px) {
