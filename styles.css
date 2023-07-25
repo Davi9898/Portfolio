@@ -25,15 +25,13 @@ body {
 }
 
 .projectentitel h2 {
+    font-size: 2rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
     font-family: 'Josefin Sans', sans-serif;
 }
 
 h1 {
-    display: flex;
-    justify-content: center;
-    margin-top: 3rem;
     font-family: 'Josefin Sans', sans-serif;
 }
 
@@ -42,11 +40,9 @@ h2{
 }
 
 p {
-    display: flex;
-    justify-content: center;
     margin-top: 3rem;
     font-size: 1rem;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .container {
@@ -64,24 +60,23 @@ p {
     width: 50%;
     padding: 2rem;
     position: relative;
-    
 }
 
 .portofolio-img {
     width: 100%;
-    border-radius: 1rem;
+    border-radius: .5rem;
     filter: brightness(40%);
 }
 
 .portofolio-img2 {
     width: 100%;
-    border-radius: 1rem;
+    border-radius: .5rem;
     
 }
 
 .portofolio-img3 {
     width: 100%;
-    border-radius: 1rem;
+    border-radius: .5rem;
     height: 100%;
     object-fit: contain;
 }
@@ -199,5 +194,60 @@ h1 {
 
   }
 
+ul {
+    margin-top: 2rem;
+}
 
+  li {
+    list-style-type: none;
+    padding: .5rem 0 .5rem 0;
+    font-family: 'Poppins', sans-serif;
+  }
+
+.githublink {
+    color: rgb(121, 29, 121);
+    text-decoration: none;
+    transition: .1s;
+}
+
+.githublink:hover {
+    color: rgb(226, 66, 226);
+    transition: .1s;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+    
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: black;
+    border-radius: 10px;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5rem 3rem 5rem;
+  }
+
+  .footerbold {
+    font-weight: bold;
+    margin-top: 0;
+  }
+
+  .footera {
+    color: black;
+    text-decoration: non;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+  }
 
