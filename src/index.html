@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfolio van Daniël Vink - Webdeveloper gespecialiseerd in HTML, CSS, JavaScript en NodeJS" />
+    <meta name="keywords" content="webdeveloper, portfolio, HTML, CSS, JavaScript, NodeJS, Amsterdam" />
+    <meta name="author" content="Daniël Vink" />
+    
+    <title>Daniël Vink | Webdeveloper</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  </head>
+  <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <header class="header" role="banner">
+      <div class="header__content">
+        <div class="header__image-wrapper">
+          <img
+            class="header__image"
+            src="/images/profielfoto.jpg"
+            alt="Profiel foto van Daniël Vink"
+          />
+        </div>
+        <div class="header__info">
+          <h1 class="header__title">Daniël Vink</h1>
+          <ul class="header__list">
+            <li class="header__list-item">📚 Communcation & Multi-media Design</li>
+            <li class="header__list-item">🧙 24 jaar oud</li>
+            <li class="header__list-item">📍 &nbsp; Amsterdam</li>
+            <li class="header__list-item">👨‍💻 HTML | CSS | JavaScript | NodeJS | Figma</li>
+          </ul>
+          <p class="header__text">
+            Kijk gerust rond op mijn <a href="https://github.com/Davi9898?tab=repositories" target="_blank" rel="noopener noreferrer" class="header__link">Github.</a>
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <main id="main-content" role="main">
+      <section class="projects" aria-labelledby="projects-title">
+        <div class="projects__title">
+          <h2 id="projects-title">Mijn projecten &#8595;</h2>
+        </div>
+        <div class="projects__grid" id="projects-grid">
+          <noscript>
+            <p style="padding: 2rem; text-align: center;">Please enable JavaScript to view projects.</p>
+          </noscript>
+          <!-- Projects will be dynamically loaded here -->
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+      <a href="#" class="footer__link" aria-label="Scroll to top">&uarr; To top</a>
+      <p class="footer__text">Daniël Vink 2023</p>
+    </footer>
+
+    <script type="module" src="/scripts/main.js"></script>
+  </body>
+</html>

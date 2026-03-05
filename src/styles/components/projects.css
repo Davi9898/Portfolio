@@ -1,0 +1,150 @@
+.work-header {
+  margin-bottom: clamp(2.5rem, 5vw, 4rem);
+}
+
+/* ─── Grid ─── */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr));
+  gap: 1.25rem;
+}
+
+/* ─── Card ─── */
+.project-card {
+  position: relative;
+  background: var(--c-surface);
+  border: 1px solid var(--c-border);
+  border-radius: var(--r-lg);
+  padding: clamp(1.5rem, 3vw, 2.25rem);
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  overflow: hidden;
+  /* Scroll reveal */
+  opacity: 0;
+  transform: translateY(36px);
+  transition:
+    opacity  0.65s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.65s cubic-bezier(0.16, 1, 0.3, 1),
+    border-color var(--t-base),
+    box-shadow var(--t-base);
+  transform-style: preserve-3d;
+  will-change: transform, opacity;
+}
+
+.project-card.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Subtle warm wash on hover */
+.project-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(212, 132, 92, 0.05) 0%, transparent 65%);
+  opacity: 0;
+  transition: opacity var(--t-base);
+  border-radius: inherit;
+  pointer-events: none;
+}
+
+.project-card:hover {
+  border-color: rgba(212, 132, 92, 0.28);
+  box-shadow:
+    0 20px 60px rgba(0, 0, 0, 0.35),
+    0 0 0 1px rgba(212, 132, 92, 0.1);
+}
+.project-card:hover::before {
+  opacity: 1;
+}
+
+/* ─── Number ─── */
+.project-num {
+  font-family: var(--f-display);
+  font-size: clamp(3rem, 6vw, 4.5rem);
+  font-weight: 300;
+  line-height: 1;
+  color: var(--c-faint);
+  letter-spacing: -0.03em;
+  transition: color var(--t-base);
+  user-select: none;
+}
+.project-card:hover .project-num {
+  color: var(--c-accent);
+}
+
+/* ─── Tags ─── */
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+.project-tag {
+  font-family: var(--f-mono);
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--c-faint);
+  padding: 0.18rem 0.6rem;
+  border: 1px solid var(--c-border);
+  border-radius: var(--r-full);
+  transition: color var(--t-fast), border-color var(--t-fast);
+}
+.project-card:hover .project-tag {
+  color: var(--c-muted);
+  border-color: var(--c-border-lt);
+}
+
+/* ─── Title ─── */
+.project-title {
+  font-family: var(--f-display);
+  font-size: clamp(1.35rem, 2.5vw, 1.7rem);
+  font-weight: 400;
+  line-height: 1.2;
+  color: var(--c-text);
+}
+
+/* ─── Description ─── */
+.project-desc {
+  font-size: var(--text-sm);
+  color: var(--c-muted);
+  line-height: 1.75;
+  flex: 1;
+}
+
+/* ─── Links ─── */
+.project-links {
+  display: flex;
+  gap: 1.25rem;
+  padding-top: 1rem;
+  margin-top: auto;
+  border-top: 1px solid var(--c-border);
+}
+.project-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: var(--f-mono);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--c-muted);
+  transition: color var(--t-fast);
+}
+.project-link svg {
+  transition: transform var(--t-fast);
+}
+.project-link:hover {
+  color: var(--c-accent);
+}
+.project-link:hover svg {
+  transform: translate(2px, -2px);
+}
+
+/* ─── Responsive ─── */
+@media (max-width: 640px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}

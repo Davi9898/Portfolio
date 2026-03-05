@@ -1,0 +1,62 @@
+.marquee {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-block: 1.4rem;
+  border-top: 1px solid var(--c-border);
+  border-bottom: 1px solid var(--c-border);
+}
+
+/* Fade edges */
+.marquee::before,
+.marquee::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: clamp(60px, 10vw, 130px);
+  z-index: 2;
+  pointer-events: none;
+}
+.marquee::before {
+  left: 0;
+  background: linear-gradient(to right, var(--c-bg), transparent);
+}
+.marquee::after {
+  right: 0;
+  background: linear-gradient(to left, var(--c-bg), transparent);
+}
+
+.marquee-track {
+  display: flex;
+  align-items: center;
+  width: max-content;
+  gap: 0;
+  animation: marquee 22s linear infinite;
+  will-change: transform;
+}
+
+.marquee:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+.marquee-item {
+  font-family: var(--f-mono);
+  font-size: var(--text-xs);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--c-muted);
+  padding-inline: 1.4rem;
+  white-space: nowrap;
+  transition: color var(--t-fast);
+}
+.marquee-item:hover {
+  color: var(--c-accent);
+}
+
+.marquee-sep {
+  color: var(--c-accent);
+  font-size: 8px;
+  opacity: 0.5;
+  flex-shrink: 0;
+}

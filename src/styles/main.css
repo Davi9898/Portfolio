@@ -1,0 +1,85 @@
+@import './variables.css';
+@import './reset.css';
+@import './animations.css';
+@import './utilities.css';
+
+@import './components/loader.css';
+@import './components/cursor.css';
+@import './components/nav.css';
+@import './components/hero.css';
+@import './components/marquee.css';
+@import './components/about.css';
+@import './components/projects.css';
+@import './components/contact.css';
+@import './components/footer.css';
+
+/* ─── Global background ─── */
+/*
+  No overflow:hidden and no filter:blur on individual divs —
+  that combination causes hard-edge clipping artifacts at the
+  viewport boundary. We use wide radial gradients instead which
+  naturally fade to transparent with zero edge artifacts.
+*/
+.bg-blobs {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.blob {
+  position: absolute;
+  border-radius: 50%;
+  will-change: transform;
+}
+.blob-1 {
+  width: clamp(600px, 80vw, 1100px);
+  height: clamp(600px, 80vw, 1100px);
+  background: radial-gradient(circle at center,
+    rgba(212, 132, 92, 0.11) 0%,
+    rgba(212, 132, 92, 0.04) 40%,
+    transparent 70%);
+  top: -30%;
+  left: -25%;
+  animation: blob-1 22s ease-in-out infinite alternate;
+}
+.blob-2 {
+  width: clamp(500px, 65vw, 900px);
+  height: clamp(500px, 65vw, 900px);
+  background: radial-gradient(circle at center,
+    rgba(201, 169, 110, 0.08) 0%,
+    rgba(201, 169, 110, 0.02) 40%,
+    transparent 70%);
+  bottom: 0%;
+  right: -25%;
+  animation: blob-2 26s ease-in-out infinite alternate;
+}
+.blob-3 {
+  width: clamp(400px, 55vw, 750px);
+  height: clamp(400px, 55vw, 750px);
+  background: radial-gradient(circle at center,
+    rgba(212, 132, 92, 0.06) 0%,
+    rgba(212, 132, 92, 0.01) 40%,
+    transparent 70%);
+  bottom: -25%;
+  left: 25%;
+  animation: blob-3 18s ease-in-out infinite alternate;
+}
+
+/* ─── Film grain ─── */
+/*
+  Oversized (-15% on every side) so the translate animation
+  never exposes the div boundary at the viewport edge.
+*/
+.grain {
+  position: fixed;
+  top: -15%;
+  left: -15%;
+  width: 130%;
+  height: 130%;
+  z-index: 9998;
+  pointer-events: none;
+  opacity: 0.038;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)'/%3E%3C/svg%3E");
+  animation: grain 7s steps(7) infinite;
+}

@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Daniël Vink — Front-end Developer & Multimedia Designer based in Amsterdam. Crafting clean, accessible digital experiences." />
+  <meta name="theme-color" content="#0d0a08" />
+  <title>Daniël Vink</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Poppins:wght@300;400;500&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="/src/styles/main.css" />
+</head>
+<body>
+
+  <!-- ═══ LOADER ═══ -->
+  <div id="loader" aria-hidden="true">
+    <span class="loader-num" id="loader-num">0</span>
+    <div class="loader-bar-wrap">
+      <div class="loader-bar" id="loader-bar"></div>
+    </div>
+  </div>
+
+  <!-- ═══ GRAIN OVERLAY ═══ -->
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- ═══ BACKGROUND BLOBS ═══ -->
+  <div class="bg-blobs" aria-hidden="true">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
+
+  <!-- ═══ CUSTOM CURSOR ═══ -->
+  <div class="cursor-dot" id="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" id="cursor-ring" aria-hidden="true"></div>
+
+  <!-- ═══ SKIP LINK ═══ -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- ═══ NAV ═══ -->
+  <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-wrap">
+      <a href="#" class="nav-logo" aria-label="Daniël Vink — Home">
+        <span>DV</span>
+      </a>
+
+      <div class="nav-links" role="list">
+        <a href="#work" class="nav-link" role="listitem">Work</a>
+        <a href="#about" class="nav-link" role="listitem">About</a>
+        <a href="#contact" class="nav-link" role="listitem">Contact</a>
+      </div>
+
+      <button class="nav-burger" id="nav-burger" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <div class="nav-drawer" id="nav-drawer" aria-hidden="true">
+      <a href="#work" class="nav-drawer-link">Work</a>
+      <a href="#about" class="nav-drawer-link">About</a>
+      <a href="#contact" class="nav-drawer-link">Contact</a>
+      <a href="mailto:contact@daniel-vink.nl" class="nav-drawer-link">contact@daniel-vink.nl</a>
+    </div>
+  </nav>
+
+  <!-- ═══ MAIN ═══ -->
+  <main id="main-content">
+
+    <!-- ─── HERO ─── -->
+    <section id="hero" class="hero" aria-label="Introduction">
+      <div class="hero-status">
+        <svg width="11" height="11" viewBox="0 0 11 11" fill="none" aria-hidden="true" class="hero-loc-icon">
+          <path d="M5.5 1C3.567 1 2 2.567 2 4.5C2 7 5.5 10 5.5 10C5.5 10 9 7 9 4.5C9 2.567 7.433 1 5.5 1Z" stroke="currentColor" stroke-width="1.2"/>
+          <circle cx="5.5" cy="4.5" r="1.25" fill="currentColor"/>
+        </svg>
+        <span>Utrecht, NL</span>
+      </div>
+
+      <div class="hero-name-wrap">
+        <h1 class="hero-name">
+          <span class="hero-line" aria-hidden="true">
+            <span class="hero-char" style="--i:0">D</span><span class="hero-char" style="--i:1">a</span><span class="hero-char" style="--i:2">n</span><span class="hero-char" style="--i:3">i</span><span class="hero-char" style="--i:4">ë</span><span class="hero-char" style="--i:5">l</span>
+          </span>
+          <span class="hero-line" aria-hidden="true">
+            <span class="hero-char hero-char--accent" style="--i:7">V</span><span class="hero-char hero-char--accent" style="--i:8">i</span><span class="hero-char hero-char--accent" style="--i:9">n</span><span class="hero-char hero-char--accent" style="--i:10">k</span>
+          </span>
+          <span class="sr-only">Daniël Vink</span>
+        </h1>
+      </div>
+
+      <div class="hero-footer">
+        <div class="hero-role">
+          <p>Front-end Developer</p>
+          <p><em>&amp; UX & UI Designer</em></p>
+        </div>
+        <div class="hero-info">
+          <p class="hero-bio">Crafting digital experiences that blend clean code with thoughtful design — from interactive interfaces to full-stack web applications.</p>
+          <div class="hero-actions">
+            <a href="#work" class="btn btn--primary">View my work</a>
+            <a href="https://github.com/Davi9898" class="btn btn--ghost" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ─── MARQUEE ─── -->
+    <div class="marquee" aria-label="Technologies I work with">
+      <div class="marquee-track" id="marquee-track" aria-hidden="true">
+        <span class="marquee-item">HTML5</span>
+        <span class="marquee-sep">✦</span>
+        <span class="marquee-item">CSS3</span>
+        <span class="marquee-sep">✦</span>
+        <span class="marquee-item">JavaScript</span>
+        <span class="marquee-sep">✦</span>
+        <span class="marquee-item">Node.js</span>
+        <span class="marquee-sep">✦</span>
+        <span class="marquee-item">REST APIs</span>
+        <span class="marquee-sep">✦</span>
+        <span class="marquee-item">Figma</span>
+        <span class="marquee-sep">✦</span>
+        <span class="marquee-item">WeWeb</span>
+        <span class="marquee-sep">✦</span>
+        <span class="marquee-item">Scrum</span>
+        <span class="marquee-sep">✦</span>
+        <span class="marquee-item">AI Tools</span>
+        <span class="marquee-sep">✦</span>
+        <span class="marquee-item">Git</span>
+        <span class="marquee-sep">✦</span>
+        <span class="marquee-item">Socket.IO</span>
+        <span class="marquee-sep">✦</span>
+        <span class="marquee-item">Accessibility</span>
+        <span class="marquee-sep">✦</span>
+        <span class="marquee-item">HTML5</span>
+        <span class="marquee-sep">✦</span>
+        <span class="marquee-item">CSS3</span>
+        <span class="marquee-sep">✦</span>
+        <span class="marquee-item">JavaScript</span>
+        <span class="marquee-sep">✦</span>
+        <span class="marquee-item">Node.js</span>
+        <span class="marquee-sep">✦</span>
+        <span class="marquee-item">REST APIs</span>
+        <span class="marquee-sep">✦</span>
+        <span class="marquee-item">Figma</span>
+        <span class="marquee-sep">✦</span>
+        <span class="marquee-item">WeWeb</span>
+        <span class="marquee-sep">✦</span>
+        <span class="marquee-item">Scrum</span>
+        <span class="marquee-sep">✦</span>
+        <span class="marquee-item">AI Tools</span>
+        <span class="marquee-sep">✦</span>
+        <span class="marquee-item">Git</span>
+        <span class="marquee-sep">✦</span>
+        <span class="marquee-item">Socket.IO</span>
+        <span class="marquee-sep">✦</span>
+        <span class="marquee-item">Accessibility</span>
+        <span class="marquee-sep">✦</span>
+      </div>
+    </div>
+
+    <!-- ─── ABOUT ─── -->
+    <section id="about" class="section about" aria-label="About me">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-left">
+            <span class="eyebrow reveal">02 — About</span>
+            <h2 class="section-heading reveal">
+              Building for<br />
+              <em>the web</em>
+            </h2>
+            <p class="about-body reveal">
+              I'm a Communication &amp; Multimedia Design student at the Amsterdam University of Applied Sciences, passionate about building accessible, performant web experiences. I work at the intersection of development and design — turning complex problems into elegant digital solutions.
+            </p>
+            <p class="about-body reveal">
+              From building real-time web apps with Node.js and Socket.IO, to designing interfaces in Figma and developing production sites in WeWeb, I enjoy working across the full product lifecycle. I'm also deeply interested in integrating AI tools to move faster and build smarter.
+            </p>
+            <a href="mailto:contact@daniel-vink.nl" class="btn btn--primary reveal">Say hello ↗</a>
+          </div>
+
+          <div class="about-right">
+            <div class="skill-group reveal">
+              <h3 class="skill-label">Frontend</h3>
+              <div class="chips">
+                <span class="chip">HTML5</span>
+                <span class="chip">CSS3 &amp; Animations</span>
+                <span class="chip">JavaScript (ES6+)</span>
+                <span class="chip">Responsive Design</span>
+                <span class="chip">Accessibility (a11y)</span>
+                <span class="chip">Progressive Enhancement</span>
+              </div>
+            </div>
+
+            <div class="skill-group reveal">
+              <h3 class="skill-label">Backend &amp; APIs</h3>
+              <div class="chips">
+                <span class="chip">Node.js</span>
+                <span class="chip">Express.js</span>
+                <span class="chip">REST APIs</span>
+                <span class="chip">Socket.IO</span>
+                <span class="chip">WebSockets</span>
+              </div>
+            </div>
+
+            <div class="skill-group reveal">
+              <h3 class="skill-label">Design &amp; No-code</h3>
+              <div class="chips">
+                <span class="chip">Figma</span>
+                <span class="chip">UI / UX Design</span>
+                <span class="chip">WeWeb</span>
+                <span class="chip">Prototyping</span>
+                <span class="chip">Design Systems</span>
+              </div>
+            </div>
+
+            <div class="skill-group reveal">
+              <h3 class="skill-label">Workflow &amp; AI</h3>
+              <div class="chips">
+                <span class="chip">Scrum / Agile</span>
+                <span class="chip">Git &amp; GitHub</span>
+                <span class="chip">AI-Assisted Dev</span>
+                <span class="chip">Prompt Engineering</span>
+                <span class="chip">Vite</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── WORK ─── -->
+    <section id="work" class="section work" aria-label="Selected projects">
+      <div class="container">
+        <div class="work-header">
+          <span class="eyebrow reveal">03 — Work</span>
+          <h2 class="section-heading reveal">
+            Selected<br />
+            <em>projects</em>
+          </h2>
+        </div>
+        <div class="projects-grid" id="projects-grid">
+          <!-- Rendered by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── CONTACT ─── -->
+    <section id="contact" class="section contact" aria-label="Contact">
+      <div class="container">
+        <span class="eyebrow reveal">04 — Contact</span>
+        <h2 class="contact-heading reveal">
+          Got something<br />
+          <em>on your mind?</em>
+        </h2>
+        <p class="contact-sub reveal">
+          A question, a collab idea, or just want to connect —<br />
+          drop me a message and I'll get back to you.
+        </p>
+
+        <form class="contact-form reveal" id="contact-form" novalidate aria-label="Contact form">
+          <div class="form-row">
+            <div class="form-field">
+              <label for="f-name">Name</label>
+              <input type="text" id="f-name" name="name" autocomplete="name" placeholder="Your name" required />
+            </div>
+            <div class="form-field">
+              <label for="f-email">Email</label>
+              <input type="email" id="f-email" name="email" autocomplete="email" placeholder="your@email.com" required />
+            </div>
+          </div>
+          <div class="form-field">
+            <label for="f-message">Message</label>
+            <textarea id="f-message" name="message" rows="5" placeholder="Tell me about your project or just say hi..." required></textarea>
+          </div>
+          <div class="form-actions">
+            <button type="submit" class="btn btn--primary form-submit">
+              <span>Send message</span>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path d="M2.5 13.5L13.5 2.5M13.5 2.5H6M13.5 2.5V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <p class="form-note" id="form-status" aria-live="polite"></p>
+          </div>
+        </form>
+
+        <div class="contact-also reveal">
+          <a href="https://github.com/Davi9898" class="contact-also-link" target="_blank" rel="noopener noreferrer">
+            <span>GitHub</span>
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+              <path d="M2 12L12 2M12 2H5.5M12 2V8.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+
+        <p class="contact-bg-word" aria-hidden="true">Hello.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+        <span class="footer-name">Daniël Vink</span>
+        <span class="footer-copy">© <span id="year"></span> — Made with HTML, CSS &amp; JS</span>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/scripts/main.js"></script>
+</body>
+</html>

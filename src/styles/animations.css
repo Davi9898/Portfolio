@@ -1,0 +1,94 @@
+/* ─── Blob float ─── */
+@keyframes blob-1 {
+  0%   { transform: translate(0, 0) scale(1); }
+  100% { transform: translate(60px, 40px) scale(1.12); }
+}
+@keyframes blob-2 {
+  0%   { transform: translate(0, 0) scale(1); }
+  100% { transform: translate(-50px, -35px) scale(1.18); }
+}
+@keyframes blob-3 {
+  0%   { transform: translate(0, 0) scale(1); }
+  100% { transform: translate(40px, -50px) scale(0.94); }
+}
+
+/* ─── Film grain ─── */
+@keyframes grain {
+  0%   { transform: translate(0, 0); }
+  16%  { transform: translate(-3%, -5%); }
+  33%  { transform: translate(4%, 2%); }
+  50%  { transform: translate(-2%, 6%); }
+  66%  { transform: translate(5%, -2%); }
+  83%  { transform: translate(-4%, 3%); }
+  100% { transform: translate(0, 0); }
+}
+
+/* ─── Hero character entrance ─── */
+@keyframes char-in {
+  from {
+    opacity: 0;
+    transform: translateY(0.25em) skewY(3deg);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) skewY(0deg);
+  }
+}
+
+/* ─── Generic fade-up ─── */
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(28px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ─── Pulse dot ─── */
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%       { opacity: 0.35; transform: scale(0.75); }
+}
+
+/* ─── Scroll indicator line ─── */
+@keyframes scroll-line {
+  0%   { transform: scaleY(0) translateY(0); opacity: 1; }
+  50%  { transform: scaleY(1) translateY(0); opacity: 1; }
+  100% { transform: scaleY(1) translateY(100%); opacity: 0; }
+}
+
+/* ─── Infinite marquee ─── */
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+/* ─── Loader fade out ─── */
+@keyframes loader-out {
+  to { opacity: 0; visibility: hidden; pointer-events: none; }
+}
+
+/* ─── Scroll reveal (JS-toggled) ─── */
+.reveal {
+  opacity: 0;
+  transform: translateY(38px);
+  transition:
+    opacity  0.75s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.75s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ─── Reduced motion overrides ─── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}

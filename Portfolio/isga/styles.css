@@ -1,0 +1,163 @@
+
+@font-face {
+  font-family: 'Colendra';
+  src: url('./assets/ColendraRegular.otf');
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Colendra';
+  src: url('./assets/ColendraBold.otf');
+  font-style: normal;
+  font-weight: 700; /* bold */
+}
+
+*, html {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+
+body {
+	background-image: url(./images/background.png);
+	background-repeat: repeat;
+	margin: 25px 10% 25px 10%;
+	text-align: center;
+}
+
+header{
+	width:100%;
+}
+
+nav{
+	color: white;
+	list-style-type: none;
+	display: flex;
+	justify-content: center;
+}
+
+footer{
+	background-color: lightgrey;
+	text-align: center;
+	margin-top: 50px;
+	padding: 2px;
+	outline: 1px solid grey;
+}
+
+nav li{
+	display: inline-block;
+	background-color: black;
+}
+
+nav a{
+	color: white;
+	text-decoration: none;
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 500;
+	padding: 20px;
+	margin: 15px;
+}
+
+h1 {
+	font-family: 'Colendra', sans-serif;   
+	font-size: 23pt;
+	line-height: 1.8em;
+	font-weight: 700;
+	color: #B90E0A;
+	display: block;
+}
+
+h2 {
+	font-family: 'Colendra', sans-serif;   
+	font-size: 15pt;
+	line-height: 1.8em;
+	color: #1D1D1B;
+	font-weight: 700;
+	padding: 0px;
+	margin: 0px;
+	display: block;
+	text-align: center;
+	position: relative;
+	bottom: 20px;
+}
+
+h3 {
+	font-family: 'Colendra', sans-serif;   
+	font-size: 15pt;
+	line-height: 1.8em;
+	color: black;
+	margin: 0;
+	width: 100%;
+	position: relative;
+}
+
+h4 {
+	font-family: 'Colendra', sans-serif;   
+	font-size: 20pt;
+	padding-top: 30px;
+	color: #9c3236;
+	
+}
+p {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	font-weight: 700;
+}
+
+ul li{
+	list-style-type: none;
+}
+
+article{
+	text-align: center;
+}
+
+button{
+	padding: 5px;
+	background-color: #B90E0A;
+	color: white;	
+}
+
+iframe{
+	border: none;
+}
+
+.container{
+	width: 100%;
+	max-width: 150px;
+	margin: auto;
+}
+
+.route_afb{
+	width:100%;
+	margin-top: 30px;
+	box-shadow: 0 0 10px 10px rgba(0,0,0,0.15);	
+}
+
+ul li{
+	list-style-type: none;
+}
+
+article{
+	text-align: center;
+}
+
+.locatiepng{
+	width:100%;
+}
+
+.source{
+	font-size: 6pt;
+}
+
+.pijltje{
+	position: relative;
+	top: 20px;
+	padding: 7px;
+}
+
+.vraag{
+	color: #4b7a78;
+}
+

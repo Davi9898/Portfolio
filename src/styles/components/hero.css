@@ -1,0 +1,114 @@
+.hero {
+  position: relative;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: calc(var(--nav-h) + clamp(1.5rem, 3vw, 2.5rem));
+  padding-bottom: clamp(2rem, 5vw, 4rem);
+  padding-inline: var(--pad-x);
+  max-width: var(--max-w);
+  margin-inline: auto;
+}
+
+/* ─── Status bar ─── */
+.hero-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--f-mono);
+  font-size: var(--text-xs);
+  letter-spacing: 0.12em;
+  color: var(--c-muted);
+  animation: fade-up 0.7s 0.1s both;
+}
+
+.hero-loc-icon {
+  color: var(--c-accent);
+  flex-shrink: 0;
+}
+
+/* ─── Giant name ─── */
+.hero-name-wrap {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  padding-block: clamp(0.5rem, 2vw, 1.5rem);
+}
+
+.hero-name {
+  font-family: var(--f-display);
+  font-size: var(--text-hero);
+  font-weight: 300;
+  line-height: 0.88;
+  letter-spacing: -0.02em;
+}
+
+.hero-line {
+  display: block;
+  overflow: hidden;
+  padding-bottom: 0.05em; /* prevent clipping of descenders */
+}
+
+.hero-char {
+  display: inline-block;
+  animation: char-in 0.85s cubic-bezier(0.16, 1, 0.3, 1) both;
+  animation-delay: calc(0.45s + var(--i, 0) * 0.048s);
+}
+
+.hero-char--accent {
+  color: var(--c-accent);
+  font-style: italic;
+}
+
+/* ─── Bottom row ─── */
+.hero-footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(1.5rem, 4vw, 3rem);
+  align-items: end;
+  animation: fade-up 0.8s 1.1s both;
+}
+
+.hero-role {
+  font-family: var(--f-display);
+  font-size: clamp(1.3rem, 2.5vw, 2rem);
+  font-weight: 300;
+  line-height: 1.35;
+  color: var(--c-muted);
+}
+.hero-role em {
+  font-style: italic;
+  color: var(--c-text);
+}
+
+.hero-bio {
+  font-size: var(--text-sm);
+  color: var(--c-muted);
+  line-height: 1.85;
+  margin-bottom: var(--s-4);
+}
+
+.hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* ─── Responsive ─── */
+@media (max-width: 720px) {
+  .hero-footer {
+    grid-template-columns: 1fr;
+    gap: var(--s-3);
+  }
+  .hero-scroll {
+    display: none;
+  }
+}
+
+@media (max-width: 420px) {
+  .hero-name {
+    letter-spacing: -0.03em;
+  }
+}

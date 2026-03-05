@@ -1,0 +1,83 @@
+[
+  {
+    "id": 1,
+    "title": "Real-Time Web",
+    "description": "A multiplayer capital-guessing game built with Node.js, Socket.IO and Express. Players compete in real time to identify world capitals — fully server-driven with live leaderboards.",
+    "link": "https://github.com/Davi9898/CapitalGuesser",
+    "liveUrl": null,
+    "external": true,
+    "tags": ["Node.js", "Socket.IO", "Express"]
+  },
+  {
+    "id": 2,
+    "title": "bRAIN",
+    "description": "A sustainability web app connecting IoT rain barrels to civic data. Helps households track water usage and visualise their environmental impact in an accessible, engaging UI.",
+    "link": "https://github.com/Davi9898/bRAIN",
+    "liveUrl": null,
+    "external": true,
+    "tags": ["Node.js", "Web App", "IoT", "Sustainability"]
+  },
+  {
+    "id": 3,
+    "title": "Browser Technologies",
+    "description": "A progressively enhanced survey form that works beautifully across all devices, browsers and connection speeds — built from the core experience outward, accessibility-first.",
+    "link": "https://github.com/Davi9898/browser-technologies-2223",
+    "liveUrl": null,
+    "external": true,
+    "tags": ["Progressive Enhancement", "Accessibility", "HTML", "CSS"]
+  },
+  {
+    "id": 4,
+    "title": "CSS to the Rescue",
+    "description": "A zero-JavaScript firework show crafted entirely in HTML & CSS. A deep dive into advanced animation techniques, custom properties and creative constraints.",
+    "link": "https://github.com/Davi9898/CSS-Vuurwerkshow",
+    "liveUrl": "https://davi9898.github.io/CSS-Vuurwerkshow/vuurwerkshow2/",
+    "external": true,
+    "tags": ["CSS", "Animation", "Creative Coding"]
+  },
+  {
+    "id": 5,
+    "title": "Frontend Development II",
+    "description": "A mobile-first website built for a zoo, featuring responsive layouts, accessible navigation, fluid typography and smooth scroll interactions — built without frameworks.",
+    "link": "/fedcontainer/index.html",
+    "liveUrl": "/fedcontainer/index.html",
+    "external": false,
+    "tags": ["HTML", "CSS", "JavaScript", "Mobile-first"]
+  },
+  {
+    "id": 6,
+    "title": "ISGA City Guide",
+    "description": "A polished city guide website built to match a client's brand identity — mobile-first, with careful attention to typographic hierarchy and visual consistency.",
+    "link": "/isgacontainer/index.html",
+    "liveUrl": "/isgacontainer/index.html",
+    "external": false,
+    "tags": ["Design", "HTML", "CSS", "Branding"]
+  },
+  {
+    "id": 7,
+    "title": "CSS Replication",
+    "description": "A pixel-perfect recreation of a given visual composition using only HTML & CSS — no images, no JavaScript. An exercise in precise layout thinking and creative CSS.",
+    "link": "/CSScursus/index.html",
+    "liveUrl": "/CSScursus/index.html",
+    "external": false,
+    "tags": ["CSS", "HTML", "Replication"]
+  },
+  {
+    "id": 8,
+    "title": "Boomagotchi",
+    "description": "A virtual tree you can nurture. My first JavaScript project — a playful game exploring DOM manipulation, event-driven programming and stateful UI.",
+    "link": "/boomagotchi/index.html",
+    "liveUrl": "/boomagotchi/index.html",
+    "external": false,
+    "tags": ["JavaScript", "DOM", "Game"]
+  },
+  {
+    "id": 9,
+    "title": "Solar System",
+    "description": "An interactive solar system — my first ever web project. A foundation in semantic HTML, CSS layout and the joy of building something for the browser from scratch.",
+    "link": "/internetstandaarden/index.html",
+    "liveUrl": "/internetstandaarden/index.html",
+    "external": false,
+    "tags": ["HTML", "CSS", "First Project"]
+  }
+]

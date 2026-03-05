@@ -1,0 +1,89 @@
+.about {
+  position: relative;
+}
+
+/* ─── Two-column grid ─── */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(3rem, 8vw, 8rem);
+  align-items: start;
+}
+
+/* ─── Left: Bio ─── */
+.about-left {
+  position: sticky;
+  top: calc(var(--nav-h) + 2rem);
+}
+
+.about-body {
+  font-size: var(--text-base);
+  color: var(--c-muted);
+  line-height: 1.9;
+  margin-bottom: var(--s-3);
+}
+
+/* ─── Right: Skills ─── */
+.about-right {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-6);
+}
+
+.skill-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.skill-label {
+  font-family: var(--f-mono);
+  font-size: var(--text-xs);
+  font-weight: 400;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--c-faint);
+}
+
+/* ─── Chips ─── */
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.chip {
+  display: inline-block;
+  padding: 0.38rem 1rem;
+  font-size: var(--text-xs);
+  font-family: var(--f-body);
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  color: var(--c-muted);
+  border: 1px solid var(--c-border);
+  border-radius: var(--r-full);
+  background: var(--c-surface);
+  transition:
+    color var(--t-base),
+    border-color var(--t-base),
+    background var(--t-base),
+    transform var(--t-base);
+  cursor: default;
+}
+.chip:hover {
+  color: var(--c-accent);
+  border-color: rgba(212, 132, 92, 0.4);
+  background: rgba(212, 132, 92, 0.07);
+  transform: translateY(-2px);
+}
+
+/* ─── Responsive ─── */
+@media (max-width: 900px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: var(--s-8);
+  }
+  .about-left {
+    position: static;
+  }
+}

@@ -1,0 +1,219 @@
+.contact {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  padding-block: clamp(5rem, 12vw, 10rem);
+}
+
+.contact .container {
+  position: relative;
+}
+
+/* ─── Heading ─── */
+.contact-heading {
+  font-family: var(--f-display);
+  font-size: clamp(3rem, 9vw, 8rem);
+  font-weight: 300;
+  line-height: 1.05;
+  color: var(--c-text);
+  margin-bottom: var(--s-4);
+}
+.contact-heading em {
+  font-style: italic;
+  color: var(--c-accent);
+}
+
+/* ─── Subtitle ─── */
+.contact-sub {
+  font-size: var(--text-lg);
+  color: var(--c-muted);
+  line-height: 1.75;
+  margin-bottom: clamp(2.5rem, 5vw, 4rem);
+}
+
+/* ─── Links ─── */
+.contact-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(1.5rem, 5vw, 3.5rem);
+  flex-wrap: wrap;
+}
+
+.contact-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  font-weight: 400;
+  color: var(--c-text);
+  position: relative;
+  transition: color var(--t-base);
+}
+.contact-link::after {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: var(--c-accent);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform var(--t-base);
+}
+.contact-link:hover {
+  color: var(--c-accent);
+}
+.contact-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+.contact-link svg {
+  transition: transform var(--t-base);
+  flex-shrink: 0;
+}
+.contact-link:hover svg {
+  transform: translate(3px, -3px);
+}
+
+/* ─── Contact form ─── */
+.contact-form {
+  max-width: 580px;
+  margin-inline: auto;
+  text-align: left;
+  margin-bottom: var(--s-4);
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  margin-bottom: 1rem;
+}
+
+.form-field label {
+  font-family: var(--f-mono);
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--c-faint);
+}
+
+.form-field input,
+.form-field textarea {
+  background: var(--c-surface);
+  border: 1px solid var(--c-border);
+  border-radius: var(--r-md);
+  padding: 0.85rem 1.1rem;
+  color: var(--c-text);
+  font-family: var(--f-body);
+  font-size: var(--text-sm);
+  font-weight: 300;
+  width: 100%;
+  transition: border-color var(--t-base), background var(--t-base);
+  resize: vertical;
+  -webkit-appearance: none;
+}
+
+.form-field input::placeholder,
+.form-field textarea::placeholder {
+  color: var(--c-faint);
+}
+
+.form-field input:focus,
+.form-field textarea:focus {
+  outline: none;
+  border-color: rgba(212, 132, 92, 0.45);
+  background: rgba(255, 235, 210, 0.03);
+}
+
+.form-field input.has-error,
+.form-field textarea.has-error {
+  border-color: rgba(200, 80, 80, 0.5);
+}
+
+.form-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 0.25rem;
+}
+
+.form-submit {
+  width: 100%;
+  justify-content: center;
+}
+
+.form-note {
+  font-family: var(--f-mono);
+  font-size: var(--text-xs);
+  letter-spacing: 0.05em;
+  color: var(--c-faint);
+  text-align: center;
+  min-height: 1.2em;
+  transition: color var(--t-base);
+}
+.form-note.is-success { color: var(--c-green); }
+.form-note.is-error   { color: #e07070; }
+
+/* ─── "Also on" row ─── */
+.contact-also {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: var(--s-3);
+}
+
+.contact-also-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: var(--f-mono);
+  font-size: var(--text-xs);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--c-faint);
+  transition: color var(--t-fast);
+}
+.contact-also-link:hover {
+  color: var(--c-accent);
+}
+.contact-also-link svg {
+  transition: transform var(--t-fast);
+}
+.contact-also-link:hover svg {
+  transform: translate(2px, -2px);
+}
+
+@media (max-width: 520px) {
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ─── Giant background word ─── */
+.contact-bg-word {
+  position: absolute;
+  bottom: -0.15em;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: var(--f-display);
+  font-size: clamp(7rem, 28vw, 28rem);
+  font-weight: 700;
+  font-style: italic;
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(240, 228, 215, 0.045);
+  white-space: nowrap;
+  pointer-events: none;
+  user-select: none;
+  line-height: 1;
+  z-index: -1;
+}
