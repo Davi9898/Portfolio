@@ -9,12 +9,19 @@
   justify-content: center;
   gap: 2rem;
   transition: opacity 0.7s ease, visibility 0.7s ease;
+  /* CSS fallback: auto-hide after 6s if JS never runs */
+  animation: loader-fallback 0.7s 5.5s ease forwards;
+}
+
+@keyframes loader-fallback {
+  to { opacity: 0; visibility: hidden; pointer-events: none; }
 }
 
 #loader.hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+  animation: none; /* cancel fallback when JS handles it */
 }
 
 .loader-num {
