@@ -336,7 +336,7 @@ function initContactForm() {
 
     if (!valid) {
       if (statusEl) {
-        statusEl.textContent = 'Please fill in all fields correctly.';
+        statusEl.textContent = 'Vul alle velden correct in.';
         statusEl.className   = 'form-note is-error';
       }
       return;
@@ -346,9 +346,9 @@ function initContactForm() {
     const email   = emailEl.value.trim();
     const message = msgEl.value.trim();
 
-    const subject = encodeURIComponent(`Portfolio message from ${name}`);
+    const subject = encodeURIComponent(`Portfoliobericht van ${name}`);
     const body    = encodeURIComponent(
-      `Name: ${name}\nEmail: ${email}\n\n${message}`
+      `Naam: ${name}\nE-mail: ${email}\n\n${message}`
     );
 
     window.location.href =
@@ -356,7 +356,7 @@ function initContactForm() {
 
     // Optimistic feedback
     if (statusEl) {
-      statusEl.textContent = 'Opening your mail client…';
+      statusEl.textContent = 'Je mailprogramma wordt geopend…';
       statusEl.className   = 'form-note is-success';
     }
     form.reset();

@@ -2,7 +2,7 @@
   {
     "id": 1,
     "title": "Real-Time Web",
-    "description": "A multiplayer capital-guessing game built with Node.js, Socket.IO and Express. Players compete in real time to identify world capitals — fully server-driven with live leaderboards.",
+    "description": "Een multiplayer raadspel waarbij je in real-time hoofdsteden moet raden. Gebouwd met Node.js en Socket.IO, met een live scorebord voor alle spelers.",
     "link": "https://github.com/Davi9898/CapitalGuesser",
     "liveUrl": null,
     "external": true,
@@ -11,7 +11,7 @@
   {
     "id": 2,
     "title": "bRAIN",
-    "description": "A sustainability web app connecting IoT rain barrels to civic data. Helps households track water usage and visualise their environmental impact in an accessible, engaging UI.",
+    "description": "Een webapp die IoT-regentonnen koppelt aan gemeentelijke data, zodat huishoudens hun waterverbruik kunnen bijhouden en zien wat hun impact is.",
     "link": "https://github.com/Davi9898/bRAIN",
     "liveUrl": null,
     "external": true,
@@ -20,7 +20,7 @@
   {
     "id": 3,
     "title": "Browser Technologies",
-    "description": "A progressively enhanced survey form that works beautifully across all devices, browsers and connection speeds — built from the core experience outward, accessibility-first.",
+    "description": "Een enquêteformulier dat werkt op álle apparaten en browsers, ook zonder JavaScript of snelle verbinding. Gebouwd vanuit de basis, met toegankelijkheid als uitgangspunt.",
     "link": "https://github.com/Davi9898/browser-technologies-2223",
     "liveUrl": null,
     "external": true,
@@ -29,7 +29,7 @@
   {
     "id": 4,
     "title": "CSS to the Rescue",
-    "description": "A zero-JavaScript firework show crafted entirely in HTML & CSS. A deep dive into advanced animation techniques, custom properties and creative constraints.",
+    "description": "Een vuurwerkshow helemaal in HTML & CSS, zonder een regel JavaScript. Gewoon kijken hoe ver je kan komen met alleen CSS-animaties en wat creativiteit.",
     "link": "https://github.com/Davi9898/CSS-Vuurwerkshow",
     "liveUrl": "https://davi9898.github.io/CSS-Vuurwerkshow/vuurwerkshow2/",
     "external": true,
@@ -38,7 +38,7 @@
   {
     "id": 5,
     "title": "Frontend Development II",
-    "description": "A mobile-first website built for a zoo, featuring responsive layouts, accessible navigation, fluid typography and smooth scroll interactions — built without frameworks.",
+    "description": "Een website voor een dierentuin, mobile-first opgezet met nette responsive layouts, toegankelijke navigatie en wat vloeiende scroll-animaties — zonder frameworks.",
     "link": "/fedcontainer/index.html",
     "liveUrl": "/fedcontainer/index.html",
     "external": false,
@@ -47,7 +47,7 @@
   {
     "id": 6,
     "title": "ISGA City Guide",
-    "description": "A polished city guide website built to match a client's brand identity — mobile-first, with careful attention to typographic hierarchy and visual consistency.",
+    "description": "Een stadsgids gebouwd op basis van de huisstijl van een opdrachtgever. Mobile-first, met veel aandacht voor typografie en een consistente uitstraling.",
     "link": "/isgacontainer/index.html",
     "liveUrl": "/isgacontainer/index.html",
     "external": false,
@@ -56,7 +56,7 @@
   {
     "id": 7,
     "title": "CSS Replication",
-    "description": "A pixel-perfect recreation of a given visual composition using only HTML & CSS — no images, no JavaScript. An exercise in precise layout thinking and creative CSS.",
+    "description": "Een gegeven visuele compositie zo precies mogelijk nabouwen met alleen HTML & CSS — geen afbeeldingen, geen JavaScript. Een fijne oefening in layout en CSS.",
     "link": "/CSScursus/index.html",
     "liveUrl": "/CSScursus/index.html",
     "external": false,
@@ -65,7 +65,7 @@
   {
     "id": 8,
     "title": "Boomagotchi",
-    "description": "A virtual tree you can nurture. My first JavaScript project — a playful game exploring DOM manipulation, event-driven programming and stateful UI.",
+    "description": "Een virtuele boom die je zelf kunt laten groeien. Mijn eerste JavaScript-project — simpel maar leuk, met DOM-manipulatie en wat spellogica.",
     "link": "/boomagotchi/index.html",
     "liveUrl": "/boomagotchi/index.html",
     "external": false,
@@ -74,7 +74,7 @@
   {
     "id": 9,
     "title": "Solar System",
-    "description": "An interactive solar system — my first ever web project. A foundation in semantic HTML, CSS layout and the joy of building something for the browser from scratch.",
+    "description": "Mijn allereerste webproject: een interactief zonnestelsel. Hier ben ik begonnen met HTML en CSS, en leren hoe een browser eigenlijk werkt.",
     "link": "/internetstandaarden/index.html",
     "liveUrl": "/internetstandaarden/index.html",
     "external": false,
